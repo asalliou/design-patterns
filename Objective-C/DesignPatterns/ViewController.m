@@ -8,8 +8,7 @@
 
 #import "ViewController.h"
 
-#import "CarBuilder.h"
-#import "TruckBuilder.h"
+#import "VehicleFactory.h"
 
 @interface ViewController ()
 
@@ -22,8 +21,9 @@
     
     self.view.translatesAutoresizingMaskIntoConstraints = NO;
     
-    Car *car = [[[[[[CarBuilder new] brand:@"Ford"] model:@"Mustang"] color:@"Black"] category:@""] build];
-    Truck *truck = [[[[[[TruckBuilder new] brand:@"Volvo"] model:@"FH"] color:@"Gray"] hasTrailer:NO] build];
+    VehicleFactory *factory = [VehicleFactory new];
+    Vehicle *car = [factory makeVehicleOfType:VehicleTypeCar];
+    Vehicle *truck = [factory makeVehicleOfType:VehicleTypeTruck];
 
     UIStackView *stackView = [self setupStackView];
     

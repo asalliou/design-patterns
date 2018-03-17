@@ -20,6 +20,8 @@
 		448A34B020511B6500D7EF40 /* Truck.m in Sources */ = {isa = PBXBuildFile; fileRef = 448A34AF20511B6500D7EF40 /* Truck.m */; };
 		44BBD359205D620B000AA870 /* TruckBuilderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BBD358205D620A000AA870 /* TruckBuilderTests.m */; };
 		44BBD35C205D6216000AA870 /* TruckBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BBD35A205D6215000AA870 /* TruckBuilder.m */; };
+		44BBD35F205D6758000AA870 /* VehicleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BBD35E205D6758000AA870 /* VehicleFactory.m */; };
+		44BBD361205D6836000AA870 /* VehicleFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BBD360205D6836000AA870 /* VehicleFactoryTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		44BBD358205D620A000AA870 /* TruckBuilderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruckBuilderTests.m; sourceTree = "<group>"; };
 		44BBD35A205D6215000AA870 /* TruckBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TruckBuilder.m; sourceTree = "<group>"; };
 		44BBD35B205D6216000AA870 /* TruckBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TruckBuilder.h; sourceTree = "<group>"; };
+		44BBD35D205D6758000AA870 /* VehicleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleFactory.h; sourceTree = "<group>"; };
+		44BBD35E205D6758000AA870 /* VehicleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleFactory.m; sourceTree = "<group>"; };
+		44BBD360205D6836000AA870 /* VehicleFactoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleFactoryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				448A34B120511DB000D7EF40 /* Model */,
+				44BBD35D205D6758000AA870 /* VehicleFactory.h */,
+				44BBD35E205D6758000AA870 /* VehicleFactory.m */,
 				448A349B204F105E00D7EF40 /* CarBuilder.h */,
 				448A349C204F105E00D7EF40 /* CarBuilder.m */,
 				44BBD35B205D6216000AA870 /* TruckBuilder.h */,
@@ -122,6 +129,7 @@
 				448A348E204F0EF300D7EF40 /* Info.plist */,
 				448A349F204F106A00D7EF40 /* CarBuilderTests.m */,
 				44BBD358205D620A000AA870 /* TruckBuilderTests.m */,
+				44BBD360205D6836000AA870 /* VehicleFactoryTests.m */,
 			);
 			path = DesignPatternsTests;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 				448A3478204F0EF300D7EF40 /* ViewController.m in Sources */,
 				44BBD35C205D6216000AA870 /* TruckBuilder.m in Sources */,
 				448A34B020511B6500D7EF40 /* Truck.m in Sources */,
+				44BBD35F205D6758000AA870 /* VehicleFactory.m in Sources */,
 				448A3483204F0EF300D7EF40 /* main.m in Sources */,
 				448A34AD20511B3B00D7EF40 /* Vehicle.m in Sources */,
 				448A349D204F105E00D7EF40 /* CarBuilder.m in Sources */,
@@ -257,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				448A34A0204F106A00D7EF40 /* CarBuilderTests.m in Sources */,
+				44BBD361205D6836000AA870 /* VehicleFactoryTests.m in Sources */,
 				44BBD359205D620B000AA870 /* TruckBuilderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
