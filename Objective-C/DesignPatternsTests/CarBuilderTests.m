@@ -17,18 +17,20 @@
 
 @implementation CarBuilderTests
 
-- (void)testBuildCarWithBrand
+- (void)testBuildCar
 {
     NSString *expectedBrand = @"Tesla";
     NSString *expectedModel = @"Model s";
     NSString *expectedColor = @"Red";
+    NSString *expectedCategory = @"Sedan";
     
     CarBuilder *builder = [CarBuilder new];
-    Car *car = [[[[builder brand:expectedBrand] model:expectedModel] color:expectedColor] build];
+    Car *car = [[[[[builder brand:expectedBrand] model:expectedModel] color:expectedColor] category:expectedCategory] build];
     
     XCTAssertEqualObjects(expectedBrand, car.brand);
     XCTAssertEqualObjects(expectedModel, car.model);
     XCTAssertEqualObjects(expectedColor, car.color);
+    XCTAssertEqualObjects(expectedCategory, car.category);
 }
 
 @end

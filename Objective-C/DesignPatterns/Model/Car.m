@@ -13,18 +13,19 @@
 - (instancetype)initWithBrand:(NSString *)brand
                         model:(NSString *)model
                         color:(NSString *)color
+                     category:(NSString *)category
 {
-    self = [super init];
+    self = [super initWithBrand:brand
+                          model:model
+                          color:color];
     if (self) {
-        _brand = brand;
-        _model = model;
-        _color = color;
+        _category = category;
     }
     return self;
 }
 
 - (NSString *)description {
-    return [[NSString alloc] initWithFormat:@"%@ %@ %@", self.brand, self.model, self.color];
+    return [[super description] stringByAppendingString:[[NSString alloc] initWithFormat:@" %@", self.category]];
 }
 
 @end

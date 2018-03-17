@@ -1,5 +1,5 @@
 //
-//  CarBuilder.h
+//  TruckBuilder.h
 //  DesignPatterns
 //
 //  Created by Antoine SALLIOU on 06/03/2018.
@@ -9,9 +9,9 @@
 @import Foundation;
 @import UIKit;
 
-#import "Car.h"
+#import "Truck.h"
 
-@interface CarBuilder : NSObject
+@interface TruckBuilder : NSObject
 
 - (instancetype)brand:(NSString *)brand;
 
@@ -19,8 +19,8 @@
 
 - (instancetype)color:(NSString *)color;
 
-- (instancetype)category:(NSString *)category;
+- (instancetype)hasTrailer:(BOOL)hasTrailer;
 
-- (Car *)build;
+- (Truck *)build;
 
 @end

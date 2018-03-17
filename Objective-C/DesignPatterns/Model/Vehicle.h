@@ -1,15 +1,14 @@
 //
-//  Car.h
+//  Vehicle.h
 //  DesignPatterns
 //
-//  Created by Antoine SALLIOU on 06/03/2018.
+//  Created by Antoine SALLIOU on 08/03/2018.
 //  Copyright © 2018 ViaMichelin. All rights reserved.
 //
 
-@import Foundation;
-@import UIKit;
+#import <Foundation/Foundation.h>
 
-@interface Car : NSObject
+@interface Vehicle : NSObject
 
 @property (nonatomic, strong, readonly) NSString *brand;
 @property (nonatomic, strong, readonly) NSString *model;

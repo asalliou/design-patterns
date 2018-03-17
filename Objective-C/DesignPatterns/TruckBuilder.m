@@ -1,23 +1,23 @@
 //
-//  CarBuilder.m
+//  TruckBuilder.m
 //  DesignPatterns
 //
 //  Created by Antoine SALLIOU on 06/03/2018.
 //  Copyright © 2018 ViaMichelin. All rights reserved.
 //
 
-#import "CarBuilder.h"
+#import "TruckBuilder.h"
 
-@interface CarBuilder ()
+@interface TruckBuilder ()
 
 @property (nonatomic, strong) NSString *brand;
 @property (nonatomic, strong) NSString *model;
 @property (nonatomic, strong) NSString *color;
-@property (nonatomic, strong) NSString *category;
+@property (nonatomic, assign) BOOL hasTrailer;
 
 @end
 
-@implementation CarBuilder
+@implementation TruckBuilder
 
 - (instancetype)brand:(NSString *)brand {
     _brand = brand;
@@ -34,17 +34,17 @@
     return self;
 }
 
-- (instancetype)category:(NSString *)category
+- (instancetype)hasTrailer:(BOOL)hasTrailer;
 {
-    _category = category;
+    _hasTrailer = hasTrailer;
     return self;
 }
 
-- (Car *)build {
-    return [[Car alloc] initWithBrand:self.brand
-                                model:self.model
-                                color:self.color
-                             category:self.category];
+- (Truck *)build {
+    return [[Truck alloc] initWithBrand:self.brand
+                                  model:self.model
+                                  color:self.color
+                             hasTrailer:self.hasTrailer];
 }
 
 @end
